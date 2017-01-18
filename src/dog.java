@@ -159,6 +159,7 @@ public class dog {
         switch (currentAction) {
             case PET:								//dog is being petted
                 setState(States.HAPPY);  //dog stays happy
+                break;
             case FEED:								//or dog is being fed
                 setState(States.HAPPY); 			//  the dog stays happy
                 break;
@@ -181,6 +182,7 @@ public class dog {
         switch (currentAction) {
             case PET:
                 setState(States.HAPPY); //pet sad dog makes happy
+                break;
             case FEED:
                 setState(States.HAPPY); //feed sad dog makes happy
                 break;
@@ -202,7 +204,8 @@ public class dog {
     private void updateHungry(Actions currentAction) {
         switch (currentAction) {
             case PET:
-                setState(States.ANGRY); //pet hungry dog makes angry 
+                setState(States.ANGRY); //pet hungry dog makes angry
+                break;
             case WALK:
                 setState(States.SLEEPY); //walk hungry dog makes sleepy
                 break;
@@ -225,10 +228,13 @@ public class dog {
         switch (currentAction) {
             case PET:
                 setState(States.HAPPY); //pet angry dog makes happy
+                break;
             case WALK:
                 setState(States.HUNGRY); //walk angry dog makes hungry
+                break;
             case FEED:
                 setState(States.SLEEPY); //feed angry dog makes sleepy
+                break;
             case IGNORE:
                 setState(States.ANGRY); //ignore angry dog stays angry			// Currently the dog always stays angry, not matter what you do
                 break;
@@ -245,10 +251,13 @@ public class dog {
         switch (currentAction) {
             case PET:
                 setState(States.SLEEPY); //pet sleepy dog stays sleepy
+                break;
             case WALK:
                 setState(States.HUNGRY); //walk sleepy dog makes hungry
+                break;
             case FEED:
                 setState(States.HAPPY); //feed sleepy dog makes happy
+                break;
             case IGNORE:
                 setState(States.SAD); //ignore sleepy dog makes sad 			// Currently the dog always stays angry, not matter what you do
                 break;
